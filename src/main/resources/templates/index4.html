@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+index页面<br>
+<h1 th:if="${result=='ni'}">是么</h1>
+<p th:switch="${menu}">
+<span th:case="admin">此用户是管理员</span>
+    <span th:case="${manage}">此用户是管理员dddddd</span>
+</p>
+</body>
+</html>

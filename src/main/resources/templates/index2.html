@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<th:block th:width="300px" >
+    <tr>
+        <td>id</td>
+        <td>name</td>
+        <td>age</td>
+        <td>序号</td>
+    </tr>
+    <tr th:each="user,inerStar:${list}">
+<!--        <td th:text="${inerStar.index+1}"></td>   索引下标0开始-->
+<!--        <td th:text="${inerStar.count}"></td> 索引下标1开始-->
+<!--        <td th:text="${inerStar.size}"></td>集合大小-->
+<!--        <td th:text="${inerStar.current}"></td>当前对象-->
+<!--        <td th:text="${inerStar.even}"></td>偶数从零开始-->
+<!--        <td th:text="${inerStar.first}"></td>第一个是true其他都是false-->
+        <td th:text="${user.id}"></td>
+        <td th:text="${user.name}"></td>
+        <td th:text="${user.age}"></td>
+    </tr>
+
+</th:block>
+</body>
+</html>
