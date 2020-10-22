@@ -14,6 +14,7 @@ public class MyController {
         String message="hello thymeleaf";
         model.addAttribute("message",message);
         System.out.println("halou----------");
+        System.out.println("halouxihognshi");
         return "index";
     }
     @RequestMapping("User")
